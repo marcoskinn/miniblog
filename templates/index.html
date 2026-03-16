@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
-    
+
 {% block conteudo %}
-    <h2>Olá {{nome}}!</h2>
-    <p>
-        <img class="imgquadrada" src="{{ url_for('static', filename='imagens/computador.jpg') }}" alt="">
-        Profissão: {{dados.profissão}}<br>
-        Empresa: {{dados.empresa}}
-    </p>
+    <div>
+        <h2>Tente descobrir o número sorteado!</h2>
+        <form method="post">
+            <label for="nomeForm">Digite seu nome:</label>
+            <input type="text" id="nomeForm" name="nomeForm" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p></p>
+    </div>
 {% endblock %}

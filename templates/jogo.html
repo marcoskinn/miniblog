@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <div>
+        <h2>Beleza {{ nome }} Vamos jogar!</h2><br>
+        <form method="post">
+            <label for="palpite">Seu palpite:</label>
+            <input type="number" id="palpite" name="palpite" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="mensagem">{{ mensagem }}</p>
+    </div>
+{% endblock %}
